@@ -15,7 +15,7 @@ Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" 
 
 ## Mathematical Classes Implemented
 
-# Fraction Class
+# 1.) Fraction Class
 
 ## Concept
 
@@ -27,5 +27,23 @@ The `Fraction` class represents fractions with a numerator (`n`) and denominator
 x = Fraction(6, 7)
 y = Fraction(2, 3)
 print(x + y)  # Output: 32/21
+
+
+### ComplexNumber Class
+
+```markdown
+# ComplexNumber Class
+
+## Concept
+
+The `ComplexNumber` class models complex numbers (`a + bi`) with real (`real`) and imaginary (`imag`) parts. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+## Example
+
+```python
+c1 = ComplexNumber(2, 3)
+c2 = ComplexNumber(1, 4)
+print(c1 + c2)  # Output: 3 + 7i
+
 
 
