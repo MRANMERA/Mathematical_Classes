@@ -28,33 +28,33 @@ x = Fraction(6, 7)
 y = Fraction(2, 3)
 print(x + y)  # Output: 32/21
 ```
-__init__(self, n, d)
+-> __init__(self, n, d)
 - Initializes a Fraction object with a numerator n and a denominator d.
 - Checks if d is zero to avoid division by zero errors.
 - Calls the simplify() method to reduce the fraction to its simplest form using the greatest common divisor (GCD).
 
-__str__(self)
+-> __str__(self)
 - Returns a string representation of the fraction in the format "n/d".
 - Provides a human-readable output when printing or converting the Fraction object to a string.
   
-__add__(self, other)
+-> __add__(self, other)
 - Performs addition of two fractions (self and other) and returns a new Fraction object with the result.
 - Uses the formula (a/b) + (c/d) = (a*d + c*b) / (b*d) to compute the sum.
 
-__sub__(self, other)
+-> __sub__(self, other)
 - Performs subtraction of two fractions (self and other) and returns a new Fraction object with the result.
 - Uses the formula (a/b) - (c/d) = (a*d - c*b) / (b*d) to compute the difference.
 
-__mul__(self, other)
+-> __mul__(self, other)
 - Performs multiplication of two fractions (self and other) and returns a new Fraction object with the result.
 - Uses the formula (a/b) * (c/d) = (a*c) / (b*d) to compute the product.
 
-__truediv__(self, other)
+-> __truediv__(self, other)
 - Performs true division of two fractions (self divided by other) and returns a new Fraction object with the result.
 - Raises a ValueError if other has a numerator of zero to prevent division by zero errors.
 - Uses the formula (a/b) / (c/d) = (a*d) / (b*c) to compute the quotient.
 
-simplify(self)
+-> simplify(self)
 - Simplifies the fraction by dividing both the numerator n and the denominator d by their greatest common divisor (GCD).
 - Ensures that fractions are always represented in their simplest form.
 
